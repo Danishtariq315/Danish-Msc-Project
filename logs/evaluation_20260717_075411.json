@@ -1,0 +1,463 @@
+{
+  "summary": {
+    "RQ1+RQ2 Proposed System": {
+      "total_runs": 10,
+      "successful": 10,
+      "tcr_percent": 100.0,
+      "avg_steps": 4.0,
+      "avg_latency_s": 6.08,
+      "error_count": 0
+    },
+    "RQ2 Unstructured Baseline": {
+      "total_runs": 10,
+      "successful": 0,
+      "tcr_percent": 0.0,
+      "avg_steps": 0.0,
+      "avg_latency_s": 4.58,
+      "error_count": 10
+    },
+    "RQ1 Flat Comparison": {
+      "total_runs": 10,
+      "successful": 10,
+      "tcr_percent": 100.0,
+      "avg_steps": 4.0,
+      "avg_latency_s": 12.63,
+      "error_count": 0
+    },
+    "RQ1+RQ2 Flat+Unstructured": {
+      "total_runs": 10,
+      "successful": 0,
+      "tcr_percent": 0.0,
+      "avg_steps": 0.0,
+      "avg_latency_s": 3.63,
+      "error_count": 10
+    }
+  },
+  "details": [
+    {
+      "domain": "healthcare",
+      "case_id": "P001",
+      "orchestration": "hierarchical",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 1.36,
+      "error": null,
+      "urgency": "critical"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P002",
+      "orchestration": "hierarchical",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 0.87,
+      "error": null,
+      "urgency": "low"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P003",
+      "orchestration": "hierarchical",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 0.95,
+      "error": null,
+      "urgency": "critical"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P004",
+      "orchestration": "hierarchical",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 0.77,
+      "error": null,
+      "urgency": "medium"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P005",
+      "orchestration": "hierarchical",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 2.94,
+      "error": null,
+      "urgency": "medium"
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-001",
+      "orchestration": "hierarchical",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 10.89,
+      "error": null,
+      "order_required": true
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-002",
+      "orchestration": "hierarchical",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 10.73,
+      "error": null,
+      "order_required": true
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-003",
+      "orchestration": "hierarchical",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 10.74,
+      "error": null,
+      "order_required": true
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-004",
+      "orchestration": "hierarchical",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 10.79,
+      "error": null,
+      "order_required": true
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-005",
+      "orchestration": "hierarchical",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 10.73,
+      "error": null,
+      "order_required": true
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P001",
+      "orchestration": "hierarchical",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 2.57,
+      "error": "Pipeline incomplete. Failed agents: Patient Intake Agent, Medical Knowledge Agent, Triage Assessment Agent, Referral Agent. Errors: [\"Intake Agent Error: 2 validation errors for PatientIntakeOutput\\nchief_complaint\\n  Field required [type=missing, input_value={'patient_id': 'P001', 'a...days': 1, 'severity': 9}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nseverity_score\\n  Field required [type=missing, input_value={'patient_id': 'P001', 'a...days': 1, 'severity': 9}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Knowledge Agent skipped \u2014 no intake data', 'Assessment Agent skipped \u2014 missing upstream data', 'Referral Agent skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P002",
+      "orchestration": "hierarchical",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 3.69,
+      "error": "Pipeline incomplete. Failed agents: Patient Intake Agent, Medical Knowledge Agent, Triage Assessment Agent, Referral Agent. Errors: [\"Intake Agent Error: 2 validation errors for PatientIntakeOutput\\nchief_complaint\\n  Field required [type=missing, input_value={'patient_id': 'P002', 'a...days': 3, 'severity': 4}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nseverity_score\\n  Field required [type=missing, input_value={'patient_id': 'P002', 'a...days': 3, 'severity': 4}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Knowledge Agent skipped \u2014 no intake data', 'Assessment Agent skipped \u2014 missing upstream data', 'Referral Agent skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P003",
+      "orchestration": "hierarchical",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 2.75,
+      "error": "Pipeline incomplete. Failed agents: Patient Intake Agent, Medical Knowledge Agent, Triage Assessment Agent, Referral Agent. Errors: [\"Intake Agent Error: 2 validation errors for PatientIntakeOutput\\nchief_complaint\\n  Field required [type=missing, input_value={'patient_id': 'P003', 'a...ays': 1, 'severity': 10}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nseverity_score\\n  Field required [type=missing, input_value={'patient_id': 'P003', 'a...ays': 1, 'severity': 10}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Knowledge Agent skipped \u2014 no intake data', 'Assessment Agent skipped \u2014 missing upstream data', 'Referral Agent skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P004",
+      "orchestration": "hierarchical",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 3.38,
+      "error": "Pipeline incomplete. Failed agents: Patient Intake Agent, Medical Knowledge Agent, Triage Assessment Agent, Referral Agent. Errors: [\"Intake Agent Error: 2 validation errors for PatientIntakeOutput\\nchief_complaint\\n  Field required [type=missing, input_value={'patient_id': 'P004', 'a...days': 2, 'severity': 5}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nseverity_score\\n  Field required [type=missing, input_value={'patient_id': 'P004', 'a...days': 2, 'severity': 5}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Knowledge Agent skipped \u2014 no intake data', 'Assessment Agent skipped \u2014 missing upstream data', 'Referral Agent skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P005",
+      "orchestration": "hierarchical",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 3.38,
+      "error": "Pipeline incomplete. Failed agents: Patient Intake Agent, Medical Knowledge Agent, Triage Assessment Agent, Referral Agent. Errors: [\"Intake Agent Error: 2 validation errors for PatientIntakeOutput\\nchief_complaint\\n  Field required [type=missing, input_value={'patient_id': 'P005', 'a...days': 2, 'severity': 7}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nseverity_score\\n  Field required [type=missing, input_value={'patient_id': 'P005', 'a...days': 2, 'severity': 7}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Knowledge Agent skipped \u2014 no intake data', 'Assessment Agent skipped \u2014 missing upstream data', 'Referral Agent skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-001",
+      "orchestration": "hierarchical",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 3.99,
+      "error": "Pipeline incomplete. Failed agents: Inventory Analysis Agent, Demand Forecasting Agent, Supplier Evaluation Agent, Procurement Agent. Errors: [\"Inventory Agent Error: 3 validation errors for InventoryAnalysisOutput\\nshortage_risk\\n  Field required [type=missing, input_value={'product_id': 'SKU-001',...0.0, 'current': 850.0}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nsurplus_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-001',...0.0, 'current': 850.0}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nflagged_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-001',...0.0, 'current': 850.0}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Forecast skipped \u2014 no inventory data', 'Supplier eval skipped \u2014 no forecast data', 'Procurement skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-002",
+      "orchestration": "hierarchical",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 6.76,
+      "error": "Pipeline incomplete. Failed agents: Inventory Analysis Agent, Demand Forecasting Agent, Supplier Evaluation Agent, Procurement Agent. Errors: [\"Inventory Agent Error: Expecting ',' delimiter: line 20 column 47 (char 583)\", 'Forecast skipped \u2014 no inventory data', 'Supplier eval skipped \u2014 no forecast data', 'Procurement skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-003",
+      "orchestration": "hierarchical",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 4.91,
+      "error": "Pipeline incomplete. Failed agents: Inventory Analysis Agent, Demand Forecasting Agent, Supplier Evaluation Agent, Procurement Agent. Errors: [\"Inventory Agent Error: 3 validation errors for InventoryAnalysisOutput\\nshortage_risk\\n  Field required [type=missing, input_value={'product_id': 'SKU-003',...ble for the product.'}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nsurplus_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-003',...ble for the product.'}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nflagged_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-003',...ble for the product.'}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Forecast skipped \u2014 no inventory data', 'Supplier eval skipped \u2014 no forecast data', 'Procurement skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-004",
+      "orchestration": "hierarchical",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 7.43,
+      "error": "Pipeline incomplete. Failed agents: Inventory Analysis Agent, Demand Forecasting Agent, Supplier Evaluation Agent, Procurement Agent. Errors: [\"Inventory Agent Error: 3 validation errors for InventoryAnalysisOutput\\nshortage_risk\\n  Field required [type=missing, input_value={'product_id': 'SKU-004',...eorder_cost': 10000.0}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nsurplus_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-004',...eorder_cost': 10000.0}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nflagged_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-004',...eorder_cost': 10000.0}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Forecast skipped \u2014 no inventory data', 'Supplier eval skipped \u2014 no forecast data', 'Procurement skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-005",
+      "orchestration": "hierarchical",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 6.99,
+      "error": "Pipeline incomplete. Failed agents: Inventory Analysis Agent, Demand Forecasting Agent, Supplier Evaluation Agent, Procurement Agent. Errors: [\"Inventory Agent Error: 3 validation errors for InventoryAnalysisOutput\\nshortage_risk\\n  Field required [type=missing, input_value={'product_id': 'SKU-005',...r_diversity_score': 1}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nsurplus_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-005',...r_diversity_score': 1}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nflagged_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-005',...r_diversity_score': 1}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Forecast skipped \u2014 no inventory data', 'Supplier eval skipped \u2014 no forecast data', 'Procurement skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P001",
+      "orchestration": "flat",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 16.39,
+      "error": null,
+      "urgency": "critical"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P002",
+      "orchestration": "flat",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 16.16,
+      "error": null,
+      "urgency": "low"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P003",
+      "orchestration": "flat",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 15.43,
+      "error": null,
+      "urgency": "critical"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P004",
+      "orchestration": "flat",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 12.1,
+      "error": null,
+      "urgency": "medium"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P005",
+      "orchestration": "flat",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 4.88,
+      "error": null,
+      "urgency": "high"
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-001",
+      "orchestration": "flat",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 18.68,
+      "error": null,
+      "order_required": true
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-002",
+      "orchestration": "flat",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 10.62,
+      "error": null,
+      "order_required": true
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-003",
+      "orchestration": "flat",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 3.65,
+      "error": null,
+      "order_required": true
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-004",
+      "orchestration": "flat",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 10.72,
+      "error": null,
+      "order_required": true
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-005",
+      "orchestration": "flat",
+      "structured": true,
+      "success": true,
+      "steps": 4,
+      "latency": 17.7,
+      "error": null,
+      "order_required": true
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P001",
+      "orchestration": "flat",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 0.57,
+      "error": "Pipeline incomplete. Failed agents: Patient Intake Agent, Medical Knowledge Agent, Triage Assessment Agent, Referral Agent. Errors: [\"Intake Agent Error: 2 validation errors for PatientIntakeOutput\\nchief_complaint\\n  Field required [type=missing, input_value={'patient_id': 'P001', 'a...days': 1, 'severity': 9}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nseverity_score\\n  Field required [type=missing, input_value={'patient_id': 'P001', 'a...days': 1, 'severity': 9}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Knowledge Agent skipped \u2014 no intake data', 'Assessment Agent skipped \u2014 missing upstream data', 'Referral Agent skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P002",
+      "orchestration": "flat",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 0.31,
+      "error": "Pipeline incomplete. Failed agents: Patient Intake Agent, Medical Knowledge Agent, Triage Assessment Agent, Referral Agent. Errors: [\"Intake Agent Error: 2 validation errors for PatientIntakeOutput\\nchief_complaint\\n  Field required [type=missing, input_value={'patient_id': 'P002', 'a...days': 3, 'severity': 4}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nseverity_score\\n  Field required [type=missing, input_value={'patient_id': 'P002', 'a...days': 3, 'severity': 4}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Knowledge Agent skipped \u2014 no intake data', 'Assessment Agent skipped \u2014 missing upstream data', 'Referral Agent skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P003",
+      "orchestration": "flat",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 0.31,
+      "error": "Pipeline incomplete. Failed agents: Patient Intake Agent, Medical Knowledge Agent, Triage Assessment Agent, Referral Agent. Errors: [\"Intake Agent Error: 2 validation errors for PatientIntakeOutput\\nchief_complaint\\n  Field required [type=missing, input_value={'patient_id': 'P003', 'a...ays': 1, 'severity': 10}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nseverity_score\\n  Field required [type=missing, input_value={'patient_id': 'P003', 'a...ays': 1, 'severity': 10}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Knowledge Agent skipped \u2014 no intake data', 'Assessment Agent skipped \u2014 missing upstream data', 'Referral Agent skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P004",
+      "orchestration": "flat",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 3.38,
+      "error": "Pipeline incomplete. Failed agents: Patient Intake Agent, Medical Knowledge Agent, Triage Assessment Agent, Referral Agent. Errors: [\"Intake Agent Error: 2 validation errors for PatientIntakeOutput\\nchief_complaint\\n  Field required [type=missing, input_value={'patient_id': 'P004', 'a...days': 2, 'severity': 5}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nseverity_score\\n  Field required [type=missing, input_value={'patient_id': 'P004', 'a...days': 2, 'severity': 5}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Knowledge Agent skipped \u2014 no intake data', 'Assessment Agent skipped \u2014 missing upstream data', 'Referral Agent skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "healthcare",
+      "case_id": "P005",
+      "orchestration": "flat",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 3.38,
+      "error": "Pipeline incomplete. Failed agents: Patient Intake Agent, Medical Knowledge Agent, Triage Assessment Agent, Referral Agent. Errors: [\"Intake Agent Error: 2 validation errors for PatientIntakeOutput\\nchief_complaint\\n  Field required [type=missing, input_value={'patient_id': 'P005', 'a...days': 2, 'severity': 7}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nseverity_score\\n  Field required [type=missing, input_value={'patient_id': 'P005', 'a...days': 2, 'severity': 7}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Knowledge Agent skipped \u2014 no intake data', 'Assessment Agent skipped \u2014 missing upstream data', 'Referral Agent skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-001",
+      "orchestration": "flat",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 5.22,
+      "error": "Pipeline incomplete. Failed agents: Inventory Analysis Agent, Demand Forecasting Agent, Supplier Evaluation Agent, Procurement Agent. Errors: [\"Inventory Agent Error: 3 validation errors for InventoryAnalysisOutput\\nshortage_risk\\n  Field required [type=missing, input_value={'product_id': 'SKU-001',...', 'unit_cost': 850.0}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nsurplus_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-001',...', 'unit_cost': 850.0}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nflagged_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-001',...', 'unit_cost': 850.0}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Forecast skipped \u2014 no inventory data', 'Supplier eval skipped \u2014 no forecast data', 'Procurement skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-002",
+      "orchestration": "flat",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 6.82,
+      "error": "Pipeline incomplete. Failed agents: Inventory Analysis Agent, Demand Forecasting Agent, Supplier Evaluation Agent, Procurement Agent. Errors: [\"Inventory Agent Error: 3 validation errors for InventoryAnalysisOutput\\nshortage_risk\\n  Field required [type=missing, input_value={'product_id': 'SKU-002',...nt stock is $30,000.'}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nsurplus_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-002',...nt stock is $30,000.'}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nflagged_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-002',...nt stock is $30,000.'}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Forecast skipped \u2014 no inventory data', 'Supplier eval skipped \u2014 no forecast data', 'Procurement skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-003",
+      "orchestration": "flat",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 11.92,
+      "error": "Pipeline incomplete. Failed agents: Inventory Analysis Agent, Demand Forecasting Agent, Supplier Evaluation Agent, Procurement Agent. Errors: [\"Inventory Agent Error: 3 validation errors for InventoryAnalysisOutput\\nshortage_risk\\n  Field required [type=missing, input_value={'product_id': 'SKU-003',...current stock level.'}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nsurplus_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-003',...current stock level.'}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nflagged_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-003',...current stock level.'}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Forecast skipped \u2014 no inventory data', 'Supplier eval skipped \u2014 no forecast data', 'Procurement skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-004",
+      "orchestration": "flat",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 0.71,
+      "error": "Pipeline incomplete. Failed agents: Inventory Analysis Agent, Demand Forecasting Agent, Supplier Evaluation Agent, Procurement Agent. Errors: [\"Inventory Agent Error: 3 validation errors for InventoryAnalysisOutput\\nshortage_risk\\n  Field required [type=missing, input_value={'product_id': 'SKU-004',...ed by the unit cost.'}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nsurplus_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-004',...ed by the unit cost.'}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nflagged_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-004',...ed by the unit cost.'}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Forecast skipped \u2014 no inventory data', 'Supplier eval skipped \u2014 no forecast data', 'Procurement skipped \u2014 missing upstream data']"
+    },
+    {
+      "domain": "supply_chain",
+      "case_id": "SKU-005",
+      "orchestration": "flat",
+      "structured": false,
+      "success": false,
+      "steps": 0,
+      "latency": 3.69,
+      "error": "Pipeline incomplete. Failed agents: Inventory Analysis Agent, Demand Forecasting Agent, Supplier Evaluation Agent, Procurement Agent. Errors: [\"Inventory Agent Error: 3 validation errors for InventoryAnalysisOutput\\nshortage_risk\\n  Field required [type=missing, input_value={'product_id': 'SKU-005',...'shipping_cost': 2.0}}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nsurplus_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-005',...'shipping_cost': 2.0}}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\\nflagged_items\\n  Field required [type=missing, input_value={'product_id': 'SKU-005',...'shipping_cost': 2.0}}}}, input_type=dict]\\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\", 'Forecast skipped \u2014 no inventory data', 'Supplier eval skipped \u2014 no forecast data', 'Procurement skipped \u2014 missing upstream data']"
+    }
+  ],
+  "metadata": {
+    "timestamp": "20260717_075411",
+    "n_cases": 5,
+    "total_runs": 40
+  }
+}
